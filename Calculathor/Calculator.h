@@ -6,9 +6,9 @@ public:
 	~Calculator();
 
 	float Add(float a, float b);
-	float Add(float a, float b, float c);
 	float Subtract(float a, float b);
 	float Multiply(float a, float b);
+	float Divide(float a, float b);
 
 };
 

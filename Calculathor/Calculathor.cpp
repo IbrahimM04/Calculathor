@@ -11,30 +11,66 @@ int main()
 	Calculator* calcP = new Calculator();
 	std::string input;
 	int choice;
+	float num1;
+	float num2;
+
 	while (true) {
 		std::cout << "Kies een operator" << std::endl;
 		std::cout << "1: x (keer)" << std::endl;
 		std::cout << "2: + (plus)" << std::endl;
 		std::cout << "3: - (min)" << std::endl;
 		std::cout << "4: / (delen)" << std::endl;
+		std::cout << "5: end (Ends the script)" << std::endl;
 		std::cin >> input;
+		choice = std::stoi(input);
+		if (std::cin.fail()) {
+			std::cin.clear();
+			std::cin.ignore();
+			std::cout << "Invalid" << std::endl;
+		}
 
 		//vraag 2 cijfers
 		//doe de berekening
 		//geef de output weer op het scherm
 
 		if (choice = std::stoi(input) > 0) {
+			choice = std::stoi(input);
 			switch (choice)
 			{
 			case 1://x
-
+				std::cout << "Input number 1" << std::endl;
+				std::cin >> num1;
+				std::cout << "Input number 2" << std::endl;
+				std::cin >> num2;
+				std::cout << "Your answer: "<< std::endl << calcP->Multiply(num1, num2) << std::endl;
+				std::cout << std::endl;
 				break;
 			case 2://+
+				std::cout << "Input number 1" << std::endl;
+				std::cin >> num1;
+				std::cout << "Input number 2" << std::endl;
+				std::cin >> num2;
+				std::cout << "Your answer: " << std::endl << calcP->Add(num1, num2) << std::endl;				
+				std::cout << std::endl;
 				break;
 			case 3://-
+				std::cout << "Input number 1" << std::endl;
+				std::cin >> num1;
+				std::cout << "Input number 2" << std::endl;
+				std::cin >> num2;				
+				std::cout << "Your answer: " << std::endl << calcP->Subtract(num1, num2) << std::endl;
+				std::cout << std::endl;
 				break;
 			case 4:// /
+				std::cout << "Input number 1" << std::endl;
+				std::cin >> num1;
+				std::cout << "Input number 2" << std::endl;
+				std::cin >> num2;
+				std::cout << "Your answer: " << std::endl << calcP->Divide(num1, num2) << std::endl;
+				std::cout << std::endl;
 				break;
+			case 5:
+				return 0;
 
 			default:
 				break;
@@ -43,14 +79,3 @@ int main()
 	}
 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
