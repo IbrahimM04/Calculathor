@@ -153,9 +153,11 @@
   <ItemGroup>
     <ClCompile Include="Calculathor.cpp" />
     <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="ConsoleIO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculator.h" />
+    <ClInclude Include="ConsoleIO.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
