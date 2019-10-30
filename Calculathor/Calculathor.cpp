@@ -33,46 +33,39 @@ int main()
 		//geef de output weer op het scherm
 
 
-			choice = std::stoi(input);
-			switch (choice)
+			
+			switch (choice = std::stoi(input))
 			{
 			case 1://x
 				std::cout << "Input number 1" << std::endl;
 				std::cin >> input;	
-				std::stof(input);
 				std::cout << "Input number 2" << std::endl;
 				std::cin >> input;
-				std::stof(input);
 				std::cout << "Your answer: "<< std::endl << calcP->Multiply(std::stof(input), std::stof(input)) << std::endl;
 				std::cout << std::endl;
+
 				break;
 			case 2://+
 				std::cout << "Input number 1" << std::endl;
 				std::cin >> input;
-				std::stof(input);
 				std::cout << "Input number 2" << std::endl;
 				std::cin >> input;
-				std::stof(input);
 				std::cout << "Your answer: " << std::endl << calcP->Add(std::stof(input), std::stof(input)) << std::endl;
 				std::cout << std::endl;
 				break;
 			case 3://-
 				std::cout << "Input number 1" << std::endl;
 				std::cin >> input;
-				std::stof(input);
 				std::cout << "Input number 2" << std::endl;
 				std::cin >> input;
-				std::stof(input);
 				std::cout << "Your answer: " << std::endl << calcP->Subtract(std::stof(input), std::stof(input)) << std::endl;
 				std::cout << std::endl;
 				break;
 			case 4:// /
 				std::cout << "Input number 1" << std::endl;
 				std::cin >> input;
-				std::stof(input);
 				std::cout << "Input number 2" << std::endl;
 				std::cin >> input;
-				std::stof(input);
 				std::cout << "Your answer: " << std::endl << calcP->Divide(std::stof(input), std::stof(input)) << std::endl;
 				std::cout << std::endl;
 				break;

@@ -17,7 +17,7 @@ std::string ConsoleIO::Ask(std::string aQuestion) {
 }
 
 int ConsoleIO::AskInt(std::string aQuestion) {
-	std::cout << std::stoi(aQuestion) << std::endl;
+	std::cout << aQuestion << std::endl;
 	std::cin >> input;
 	int answer = std::stoi(input);
 	return answer;
